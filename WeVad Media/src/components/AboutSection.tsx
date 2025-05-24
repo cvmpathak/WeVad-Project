@@ -7,35 +7,33 @@ const AboutSection = () => {
       <div className="max-w-5xl mx-auto text-white">
         <p className="text-lg font-medium mb-2">About</p>
         <h1 className="text-5xl font-bold mb-6">Hariom Pathak</h1>
-        <h2 className="text-xl font-semibold mb-4">Branding Strategist, Self-Growth Coach & a Storyteller</h2>
+        <h2 className="text-xl font-semibold mb-4">Growth Architect, Creator Mentor & Brand Story Strategist</h2>
         <p className=" mb-4">
-          I made a bold decision to leave my high-paying consulting job at Accenture
-          to pursue something I really love - adding value to people's lives through
-          content creation.
+          I didn’t come from a fancy corporate background or a high-paying MNC job. I built everything from the ground up—with curiosity, consistency, and a commitment to impact.
         </p>
         <p className=" mb-6">
-          I've spent four years growing my own personal brand from scratch to over
-          750k+ community. I know how to make your content stand out and go viral.
-          Want me to guide your inhouse team to 2x your growth? Want to build a
-          strong personal brand?
+          I started by experimenting with content, driven by a passion to communicate ideas that truly help people. Over time, that passion turned into a powerful personal brand—today, I’ve built a thriving community of over 10k+ followers who trust and engage with my work.
+        </p>
+        <p className=" mb-6">
+          Now, I help creators, entrepreneurs, and in-house teams do the same—grow faster, connect deeper, and stand out with a story that sticks.
         </p>
 
         <div className="space-y-6 mb-10">
           <div className="flex items-center gap-4">
             <BadgePlus className="w-6 h-6 text-purple-400" />
-            <span className="text-lg">Designing Brand Identity.</span>
+            <span className="text-lg">Crafting compelling brand identities that speak for themselves</span>
           </div>
           <div className="flex items-center gap-4">
             <Sparkles className="w-6 h-6 text-purple-400" />
-            <span className="text-lg">Optimizing content strategies to go viral.</span>
+            <span className="text-lg">Engineering content strategies that are built to go viral</span>
           </div>
           <div className="flex items-center gap-4">
             <ArrowUpRight className="w-6 h-6 text-purple-400" />
-            <span className="text-lg">Hooking audiences through storytelling.</span>
+            <span className="text-lg">Capturing attention with storytelling that hooks instantly</span>
           </div>
           <div className="flex items-center gap-4">
             <Droplet className="w-6 h-6 text-purple-400" />
-            <span className="text-lg">Improving engagement through call-to-action.</span>
+            <span className="text-lg">Boosting engagement with smart, action-driven messaging</span>
           </div>
         </div>
 

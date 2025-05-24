@@ -15,6 +15,9 @@ module.exports = {
           whiteBorder: 'rgba(255, 255, 255, 0.2)', // Border for glassmorphism
         },
       },
+      spacing: {
+        '30rem': '30rem',
+      },
     },
   },
   variants: {

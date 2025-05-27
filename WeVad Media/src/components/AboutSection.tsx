@@ -3,8 +3,8 @@ import { ArrowUpRight, Sparkles, Droplet, BadgePlus } from 'lucide-react';
 
 const AboutSection = () => {
   return (
-    <div className="bg-white min-h-screen px-6 py-12 md:px-10 md:py-10 font-sans bg-brand-blue">
-      <div className="max-w-5xl mx-auto text-white">
+    <div className="bg-white min-h-screen px-6 py-0 md:px-10 font-sans bg-brand-blue py-20">
+      <div className="max-w-7xl mx-auto text-white">
         <p className="text-lg font-medium mb-2">About</p>
         <h1 className="text-5xl font-bold mb-6">Hariom Pathak</h1>
         <h2 className="text-xl font-semibold mb-4">Growth Architect, Creator Mentor & Brand Story Strategist</h2>

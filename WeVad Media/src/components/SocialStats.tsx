@@ -11,7 +11,7 @@ const stats = [
 
 const SocialStats = () => {
   return (
-    <section className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] py-10 bg-brand-blue">
+    <section className="py-10 bg-brand-blue">
       <div className="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-6">
         {stats.map((stat, index) => (
           <div

@@ -44,7 +44,7 @@ const ServicesSection = () => {
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}
@@ -56,8 +56,8 @@ const ServicesSection = () => {
               >
                 <div className="absolute inset-0 bg-black bg-opacity-50 transition duration-300 group-hover:bg-opacity-40" />
               </div>
-              <div className="relative p-8 text-white z-10 h-full flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent">
-                <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+              <div className="relative p-16 m-2 text-white z-10 h-full flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+                <h4 className="text-2xl font-bold mb-2">{service.title}</h4>
                 <p className="text-sm text-gray-200">{service.description}</p>
               </div>
             </div>

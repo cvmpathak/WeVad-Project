@@ -7,13 +7,23 @@ import TeamSection from '../components/TeamSection';
 import OurExpertiseSection from '../components/ExpertiesSection';
 import Footer from '../components/Footer';
 import SocialStats from '../components/SocialStats';
+import ProblemsAndSolutions from '../components/ProblemAndSolutions';
+import ClientCards from '../components/ClientCards';
+import AboutWeVadMedia from '../components/AboutWeVadMedia';
+import StatsSection from '../components/StatsSection';
 
 const Home: React.FC = () => {
   return (
     <div>
       <HeroSection />
+      <StatsSection />
+      <ClientCards />
+      <AboutWeVadMedia />
+      
+      <ProblemsAndSolutions />
+      
       <ServicesSection />
-      <SocialStats />
+      {/* <SocialStats /> */}
       <OurExpertiseSection />
       <AboutSection />
       <TeamSection />

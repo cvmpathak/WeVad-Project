@@ -20,8 +20,8 @@ const teamMembers = [
 
 const TeamSection = () => {
     return (
-        <div className="text-white py-20 px-4 md:px-10 bg-white">
-            <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">Meet Our Team</h2>
+        <div className="text-white py-20 px-4 md:px-10 bg-brand-blue">
+            <h2 className="text-4xl font-extrabold text-center text-white mb-12">Meet Our Team</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
                 {teamMembers.map((member, index) => (
                     <div key={index} className="bg-[#0F2B3E] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300"

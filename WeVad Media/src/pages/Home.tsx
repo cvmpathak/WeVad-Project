@@ -1,34 +1,23 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
-import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ContactSection from '../components/ContactSection';
 import TeamSection from '../components/TeamSection';
-import OurExpertiseSection from '../components/ExpertiesSection';
-import Footer from '../components/Footer';
-import SocialStats from '../components/SocialStats';
-import ProblemsAndSolutions from '../components/ProblemAndSolutions';
-import ClientCards from '../components/ClientCards';
+// import Footer from '../components/Footer';
+// import ClientCards from '../components/ClientCards';
 import AboutWeVadMedia from '../components/AboutWeVadMedia';
-import StatsSection from '../components/StatsSection';
+import Testimonials from '../components/Testimonials';
 
 const Home: React.FC = () => {
   return (
     <div>
       <HeroSection />
-      <StatsSection />
-      <ClientCards />
       <AboutWeVadMedia />
-      
-      <ProblemsAndSolutions />
-      
       <ServicesSection />
-      {/* <SocialStats /> */}
-      <OurExpertiseSection />
-      <AboutSection />
+      {/* <ClientCards /> */}
+      <Testimonials />
       <TeamSection />
       <ContactSection />
-      <Footer />
     </div>
   );
 };

@@ -1,43 +1,62 @@
 import React from 'react';
 
-const teamMembers = [
+  const team = [
     {
-        name: 'Hariom Pathak',
-        role: ['Branding Strategist', 'Direction & Production', 'Storyteller'],
-        image: '/hariom.jpg',
+      name: "Ranu Pathak",
+      role: "Creative Director",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
-        name: 'Sandeep Verma',
-        role: ['Marketing & Sales', 'Relationship Manager', 'Operations'],
-        image: '/sandeep.jpg',
+      name: "Hariom Pathak",
+      role: "Digital Marketing Lead",
+      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
-        name: 'Piyush Singh',
-        role: ['Content Marketing', 'Research & Analytics', 'Human Resource'],
-        image: '/piyush.jpg',
+      name: "Nisha Pathak",
+      role: "Head of Design",
+      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
-];
+    {
+      name: "Shivam Pathak",
+      role: "Technology Director",
+      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
+  ];
 
 const TeamSection = () => {
     return (
-        <div className="text-white py-20 px-4 md:px-10 bg-brand-blue">
-            <h2 className="text-4xl font-extrabold text-center text-white mb-12">Meet Our Team</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-                {teamMembers.map((member, index) => (
-                    <div key={index} className="bg-[#0F2B3E] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300"
-                        style={{ backgroundImage: `url(${member.image})` }}>
-                        <img src={member.image} alt={member.name} className="w-full h-80 object-cover"/>
-                        <div className="p-6 text-center">
-                            <h3 className="text-2xl font-bold text-[#32FF6A] mb-2">{member.name}</h3>
-                            <ul className="text-gray-200 space-y-1">
-                                {member.role.map((line, i) => (
-                                    <li key={i} className="text-sm tracking-wide">{line}</li>
-                                ))}
-                            </ul>
-                        </div>
+        <div>
+            {/* Team Section */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Expert Team</h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Our diverse team of experts brings together years of experience in design,
+                            marketing, and technology to deliver outstanding results.
+                        </p>
                     </div>
-                ))}
-            </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {team.map((member, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                            >
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="w-full h-64 object-cover"
+                                />
+                                <div className="p-6 text-center">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
+                                    <p className="text-blue-600 font-medium">{member.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };

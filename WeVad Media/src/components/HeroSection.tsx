@@ -1,97 +1,66 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Download } from 'lucide-react'; // Use any icon library you prefer
+import {
+  ArrowRight,
+  Play,
+  Zap
+} from 'lucide-react';
 
 const HeaderHero: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
-    <header className="relative w-full h-screen bg-cover bg-center bg-no-repeat text-white bg-brand-blue"
-      >
-
-      {/* Header */}
-      <div className="absolute top-0 left-0 w-full z-50 bg-transparent">
-        <div className="container mx-auto flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="text-xl font-bold flex items-center py-2 px-10">
-            <span className="text-white">WeVad</span>
-            <span className="text-xs bg-white text-black ml-1 px-1 rounded-sm">media</span>
-          </div>
-
-          {/* Hamburger Toggle */}
-          <div className="md:hidden px-6 py-2">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
-            </button>
-          </div>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-6 text-sm px-8">
-            <Link to="services" smooth duration={500} className="hover:text-blue-300 cursor-pointer py-2">
-              Our Services
-            </Link>
-            <Link to="work" smooth duration={500} className="hover:text-blue-300 cursor-pointer py-2">
-              Our Work
-            </Link>
-            <a href="/brochure.pdf" download className="hover:text-blue-300 py-2">
-              Download Brochure
-            </a>
-            <Link to="contact" smooth duration={500}>
-              <button
-                className="text-white px-4 py-2  rounded-full transition"
-                style={{ backgroundColor: '#6C63FF', boxShadow: '0 0 10px rgba(108, 99, 255, 0.6)' }}
-              >
-                Contact Us
-              </button>
-            </Link>
-          </nav>
-        </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-[#001D21] text-white px-6 py-6 text-center space-y-6">
-            <Link to="services" smooth duration={500} onClick={() => setIsMenuOpen(false)} className="block">
-              Our Services
-            </Link>
-            <Link to="work" smooth duration={500} onClick={() => setIsMenuOpen(false)} className="block">
-              Our Work
-            </Link>
-            <a
-              href="/brochure.pdf"
-              download
-              onClick={() => setIsMenuOpen(false)}
-              className="flex justify-center items-center space-x-2 pb-6"
-            >
-              <Download size={18} />
-              <span>Download Brochure</span>
-            </a>
-            <Link to="contact" smooth duration={500} onClick={() => setIsMenuOpen(false)}>
-              <button className="text-white px-6 py-2 rounded-full font-medium"
-              style={{ backgroundColor: '#6C63FF', boxShadow: '0 0 10px rgba(108, 99, 255, 0.6)' }}>
-                Contact Us
-              </button>
-            </Link>
-          </div>
-        )}
-      </div>
-
+    <header className="relative w-full h-screen text-white bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800">
       {/* Hero Section */}
-      <div className="pt-30rem md:pt-0 flex flex-col lg:flex-row items-center justify-between container mx-auto h-full relative z-20">
-        <div className="max-w-xl text-left sm:px-10">
-          <h1 className="text-5xl sm:text-5xl font-extrabold mb-6">WeVad Media</h1>
-          <p className="text-xl sm:text-2xl md:text-3xl font-light mb-6 font-bold md:px-0 px-8">
-            Your Growth is <span className="text-blue-200 font-extrabold">Our Success.</span>
-          </p>
-          <a
-            href="/brochure.pdf"
-            download
-            className="inline-block md:mx-0 mx-16  px-8 py-3 text-white font-semibold rounded-full shadow-lg transition duration-300 bg-brand-lightblue"
-            style={{ backgroundColor: '#6C63FF', boxShadow: '0 0 10px rgba(108, 99, 255, 0.6)' }}
-          >
-            Download Brochure
-          </a>
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-orange-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
-      </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+                  Creative
+                  <span className="block bg-gradient-to-r from-blue-400 to-orange-500 bg-clip-text text-transparent">
+                    WeVad Media
+                  </span>
+                </h1>
+                <p className="text-xl text-gray-300 max-w-lg">
+                  We transform brands through innovative digital strategies, compelling content, and cutting-edge design solutions that drive real results.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-200 group"
+                >
+                  Get Started
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+                </Link>
+                <button className="inline-flex items-center text-white border-2 border-white/30 px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-200 group">
+                  <Play className="mr-2 h-5 w-5" />
+                  Watch Demo
+                </button>
+              </div>
+            </div>
+
+            <div className="relative hidden md:block">
+              <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-orange-500/20 rounded-3xl backdrop-blur-sm border border-white/10 p-8">
+                <div className="h-full bg-gradient-to-br from-white/10 to-white/5 rounded-2xl flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <Zap className="h-16 w-16 mx-auto mb-4 text-blue-400" />
+                    <h3 className="text-2xl font-bold mb-2">Innovation Driven</h3>
+                    <p className="text-gray-300">Crafting the future of digital experiences</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   );
 };

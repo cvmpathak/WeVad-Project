@@ -1,75 +1,113 @@
 import React from 'react';
-import { FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
-
-const YoutubeIcon = FaYoutube as unknown as React.FC<{ size?: number }>;
-const LinkedinIcon = FaLinkedin as unknown as React.FC<{ size?: number }>;
-const InstagramIcon = FaInstagram as unknown as React.FC<{ size?: number }>;
-
-const services = [
-  {
-    icon: <InstagramIcon size={40} />,
-    title: 'Conquer Insta with Viral Content!',
-    description: [
-      'Short-form content is the future. At WeVad Media, we craft your journey to getting viral on Insta with end-to-end management.',
-      'We provide in-house production and confident creators who excel at hooking audiences.',
-    ],
-    cta: 'Ready to WOW your follower with awesome reels? Let’s do this!',
-  },
-  {
-    icon: <YoutubeIcon size={40} />,
-    title: 'Rule YT with Storytelling!',
-    description: [
-      'Let your brand story resonate with your target audience through our creative storytelling.',
-      'From detailed research, scripting, and high production quality to seamless editing and insightful analytics, we’ve got your back.',
-    ],
-    cta: 'Ready to turn your subscribers into loyal customers? Lights, camera, let’s engage!',
-  },
-  {
-    icon: <LinkedinIcon size={40} />,
-    title: 'Ace LinkedIn with Brand Persona!',
-    description: [
-      'Let’s make your brand standout with a full personalized profile optimization.',
-      'We specialize in crafting creative banners, compelling descriptions and informative carousels.',
-      'Our content includes strong CTA, strategic keywords, and engaging stories.',
-    ],
-    cta: 'Ready to turn likes into loyal customers? Let’s make this happen!',
-  },
-];
+import { Link } from 'react-router-dom';
+import { 
+  ArrowRight,
+  Target, 
+  Palette, 
+  Share2, 
+  Camera, 
+  Code, 
+  Search
+} from 'lucide-react';
 
 const ServicesSection = () => {
-  return (
-    <section className="relative py-16 text-gray-800 overflow-hidden bg-white px-4 sm:px-8">
-      <div className="relative z-20">
-        <div className="text-center mb-12">
-          <h3 className="text-md italic text-gray-700">Our</h3>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Services</h2>
-        </div>
+  const services = [
+    {
+      icon: <Target className="h-8 w-8" />,
+      title: "Digital Marketing Strategy",
+      description: "Comprehensive digital marketing strategies tailored to your business goals and target audience.",
+      features: ["Market Research", "Campaign Planning", "Performance Tracking", "ROI Optimization"],
+      color: "from-blue-500 to-indigo-800"
+    },
+    {
+      icon: <Palette className="h-8 w-8" />,
+      title: "Branding & Logo Design",
+      description: "Create memorable brand identities that resonate with your audience and differentiate your business.",
+      features: ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy"],
+      color: "from-purple-500 to-pink-800"
+    },
+    {
+      icon: <Share2 className="h-8 w-8" />,
+      title: "Social Media Management",
+      description: "Build and engage your community across all major social media platforms with strategic content.",
+      features: ["Content Planning", "Community Management", "Social Advertising", "Analytics"],
+      color: "from-green-500 to-green-800"
+    },
+    {
+      icon: <Camera className="h-8 w-8" />,
+      title: "Content Creation",
+      description: "High-quality photo, video, and written content that tells your story and engages your audience.",
+      features: ["Photography & Video", "Copywriting", "Graphic Design", "Content Strategy"],
+      color: "from-pink-500 to-red-500"
+    },
+    {
+      icon: <Code className="h-8 w-8" />,
+      title: "Web Design & Development",
+      description: "Modern, responsive websites that provide exceptional user experiences and drive conversions.",
+      features: ["Responsive Design", "E-commerce", "CMS Development", "Optimization"],
+      color: "from-indigo-500 to-blue-800"
+    },
+    {
+      icon: <Search className="h-8 w-8" />,
+      title: "SEO & SEM",
+      description: "Improve your online visibility and drive qualified traffic through search engine optimization.",
+      features: ["Keyword Research", "On-page SEO", "Technical SEO", "Google Ads"],
+      color: "from-yellow-500 to-red-700"
+    }
+  ];
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition"
-            >
-              <div className="mb-4 flex justify-center">{service.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">{service.title}</h3>
-              <div className="text-sm text-gray-600 space-y-2 mb-4">
-                {service.description.map((text, idx) => (
-                  <p key={idx}>
-                    {text.includes('in-house') || text.includes('storytelling') || text.includes('informative carousels') ? (
-                      <strong>{text}</strong>
-                    ) : (
-                      text
-                    )}
-                  </p>
-                ))}
+  return (
+    <div>
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Our Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive digital solutions designed to elevate your brand and drive meaningful results.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-12">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group"
+              >
+                <div className={`bg-gradient-to-r ${service.color} p-6`}>
+                  <div className="text-white mb-4 group-hover:scale-110 transition-transform duration-200">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
+                  <p className="text-white/90">{service.description}</p>
+                </div>
+                <div className="p-8">
+                  <ul className="space-y-3">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center text-gray-700">
+                        <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.color} mr-3`}></div>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <p className="text-sm font-semibold text-blue-900">{service.cta}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              to="/services"
+              onClick={() => window.scrollTo(0, 0)}
+              className="inline-flex items-center bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200 group"
+            >
+              View All Services
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

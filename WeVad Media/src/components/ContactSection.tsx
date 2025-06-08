@@ -62,22 +62,22 @@ const ContactSection = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-black placeholder-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-black placeholder-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
                 <textarea
                   placeholder="Tell us about your project..."
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-black placeholder-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 ></textarea>
-                <button className="w-full bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200 flex items-center justify-center group">
+                <a href="/contact"><button className="w-full bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200 flex items-center justify-center group">
                   Send Message
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
+                </button></a>
               </div>
             </div>
           </div>

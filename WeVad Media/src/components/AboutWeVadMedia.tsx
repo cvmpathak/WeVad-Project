@@ -78,7 +78,7 @@ export default function AboutWeVadMedia() {
             <div className="relative hidden md:block">
               <div className="aspect-square bg-gradient-to-br from-blue-50 to-orange-50 rounded-3xl p-8">
                 <div className="h-full bg-white rounded-2xl shadow-xl flex items-center justify-center">
-                  <div className="text-center">
+                  <div className="text-center p-8">
                     <Award className="h-20 w-20 text-blue-600 mx-auto mb-6" />
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Award Winning</h3>
                     <p className="text-gray-600  max-w-xs mx-auto">

@@ -32,7 +32,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-all duration-200 hover:text-blue-600 relative group ${location.pathname === item.path
+                className={`text-lg font-medium transition-all duration-200 hover:text-blue-600 relative group ${location.pathname === item.path
                   ? 'text-blue-600'
                   : 'text-gray-900'
                 }`}

@@ -2,22 +2,22 @@ import React from 'react';
 
   const team = [
     {
-      name: "Ranu Pathak",
-      role: "Creative Director",
+      name: "Santanu kumar",
+      role: "Digital Marketing Lead",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       name: "Hariom Pathak",
-      role: "Digital Marketing Lead",
+      role: "Creative Director",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
-      name: "Nisha Pathak",
+      name: "Bimochan jena",
       role: "Head of Design",
       image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
-      name: "Shivam Pathak",
+      name: "Sourabh Singh",
       role: "Technology Director",
       image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
     }

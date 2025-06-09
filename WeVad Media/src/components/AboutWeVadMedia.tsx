@@ -44,7 +44,7 @@ export default function AboutWeVadMedia() {
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                   About <span className="bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">Wevad Media</span>
                 </h2>
-                <p className="text-xl text-gray-600 mb-8">
+                <p className="text-lg text-gray-600 mb-8">
                   At WeVad Media, we transform your online presence into a powerful brand asset. Every click, like, and share matters. 
                   We're not just content managers — we're digital storytellers curating your brand's destiny.
                 </p>
@@ -56,7 +56,7 @@ export default function AboutWeVadMedia() {
                     <Target className="h-8 w-8 text-blue-600 mr-3" />
                     <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
                   </div>
-                  <p className="text-gray-600">
+                  <p className="text-lg text-gray-600">
                     To empower businesses with innovative digital solutions that drive growth, enhance brand presence,
                     and create meaningful connections with their audiences.
                   </p>
@@ -67,7 +67,7 @@ export default function AboutWeVadMedia() {
                     <Rocket className="h-8 w-8 text-orange-500 mr-3" />
                     <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
                   </div>
-                  <p className="text-gray-600">
+                  <p className="text-lg text-gray-600">
                     To be the leading creative agency that transforms how businesses connect with their customers
                     in the digital age.
                   </p>
@@ -111,7 +111,7 @@ export default function AboutWeVadMedia() {
                   {value.icon}
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h4>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-lg text-gray-600">{value.description}</p>
               </div>
             ))}
           </div>

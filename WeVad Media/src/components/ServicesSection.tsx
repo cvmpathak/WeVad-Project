@@ -80,10 +80,10 @@ const ServicesSection = () => {
                     {service.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-                  <p className="text-white/90">{service.description}</p>
+                  <p className="text-lg text-white/90">{service.description}</p>
                 </div>
                 <div className="p-8">
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 text-md">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-gray-700">
                         <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.color} mr-3`}></div>

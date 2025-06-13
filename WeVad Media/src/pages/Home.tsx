@@ -7,6 +7,7 @@ import TeamSection from '../components/TeamSection';
 // import ClientCards from '../components/ClientCards';
 import AboutWeVadMedia from '../components/AboutWeVadMedia';
 import Testimonials from '../components/Testimonials';
+import PortfolioSection from '../components/PortfolioSection';
 
 const Home: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
       <HeroSection />
       <AboutWeVadMedia />
       <ServicesSection />
+      <PortfolioSection />
       {/* <ClientCards /> */}
       <Testimonials />
       <TeamSection />

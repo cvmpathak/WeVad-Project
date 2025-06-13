@@ -10,9 +10,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg">
+              {/* <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
+              <img 
+              src="/logo.png" // Replace with your actual logo URL
+              alt="Wevad Media Logo"
+              className="h-14 w-14 object-contain group-hover:scale-110 transition-transform duration-200"
+            />
               <span className="text-2xl font-bold">Wevad Media</span>
             </div>
             <p className="text-gray-400">

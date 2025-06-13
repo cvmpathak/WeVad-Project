@@ -10,17 +10,23 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
+    { name: 'Portfolio', path: '/portfolio' },
     { name: 'Contact', path: '/contact' },
   ];
 
   return (
     <header className="w-full bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2">
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg group-hover:scale-110 transition-transform duration-200">
+            {/* <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg group-hover:scale-110 transition-transform duration-200">
               <Zap className="h-6 w-6 text-white" />
-            </div>
+            </div> */}
+            <img 
+              src="/logo.png" // Replace with your actual logo URL
+              alt="Wevad Media Logo"
+              className="h-14 w-14 object-contain group-hover:scale-110 transition-transform duration-200"
+            />
             <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
               Wevad Media
             </span>

@@ -8,7 +8,7 @@ import {
 
 const ContactSection = () => {
   return (
-    <div className="pt-16">
+    <div>
       {/* Contact Preview Section */}
       <section className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

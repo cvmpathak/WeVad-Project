@@ -6,6 +6,14 @@ import {
   Zap
 } from 'lucide-react';
 
+const phoneNumber = '919016721899'; // Replace with your WhatsApp number
+const message = "Hello, I have a query, Let's connect"; // Default message
+
+const handleClick = () => {
+    // Open WhatsApp chat in a new tab
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
 const HeaderHero: React.FC = () => {
   return (
     <header className="relative w-full h-screen text-white bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800">
@@ -35,15 +43,16 @@ const HeaderHero: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
+                  onClick={handleClick}
                   className="inline-flex items-center bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-200 group"
                 >
-                  Get Started
+                  Contact Us
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
-                <button className="inline-flex items-center text-white border-2 border-white/30 px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-200 group">
+                {/* <button className="inline-flex items-center text-white border-2 border-white/30 px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-200 group">
                   <Play className="mr-2 h-5 w-5" />
                   Watch Demo
-                </button>
+                </button> */}
               </div>
             </div>
 

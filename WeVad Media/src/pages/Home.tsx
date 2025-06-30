@@ -8,6 +8,10 @@ import TeamSection from '../components/TeamSection';
 import AboutWeVadMedia from '../components/AboutWeVadMedia';
 import Testimonials from '../components/Testimonials';
 import PortfolioSection from '../components/PortfolioSection';
+import InfiniteCarousel from '../components/ClientLogosSection';
+
+ // Client logos for carousel
+
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +20,7 @@ const Home: React.FC = () => {
       <AboutWeVadMedia />
       <ServicesSection />
       <PortfolioSection />
+      <InfiniteCarousel />
       {/* <ClientCards /> */}
       <Testimonials />
       <TeamSection />

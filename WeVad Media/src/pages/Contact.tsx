@@ -260,8 +260,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
-                    <p className="text-gray-600">hello@wevadmedia.com</p>
-                    <p className="text-gray-600">projects@wevadmedia.com</p>
+                    <p className="text-gray-600">hellowevadmedia@gmail.com</p>
                   </div>
                 </div>
 
@@ -271,7 +270,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Call Us</h3>
-                    <p className="text-gray-600">+91 9081089085</p>
+                    <p className="text-gray-600">+91 9016721899</p>
                     <p className="text-gray-600">+91 9824217578</p>
                   </div>
                 </div>
@@ -328,14 +327,14 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Find Us</h2>
             <p className="text-xl text-gray-600">
-              Located in the heart of Lawachha City, we're always ready to meet in person.
+              Located in the heart of Silvassa City, we're always ready to meet in person.
             </p>
           </div>
 
           <div className="overflow-hidden rounded-2xl shadow-lg">
             <iframe
               title="WeVad Media Location"
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1112.510257432694!2d72.98781169011042!3d20.299292349103276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1749414266999!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467.8254232580273!2d73.00699819850924!3d20.27527712069443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cb5edb1ce063%3A0x65fe78dc1cdaeb1f!2sSilvassa%2C%20Dadra%20and%20Nagar%20Haveli%20and%20Daman%20and%20Diu!5e0!3m2!1sen!2sin!4v1750562401930!5m2!1sen!2sin"
               width="100%"
               height="384" // h-96 = 384px
               loading="lazy"

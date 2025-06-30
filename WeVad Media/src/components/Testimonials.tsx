@@ -4,29 +4,29 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Jennifer Martinez",
+      name: "Aman Upadhyay",
       role: "CEO, TechFlow Solutions",
       company: "TechFlow Solutions",
-      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content: "Wevad Media transformed our entire digital presence. Their strategic approach and creative execution exceeded all expectations. We saw a 300% increase in qualified leads within just 3 months.",
+      image: "https://drive.google.com/file/d/1dsgEo5AlvcrfNOW5eZLalPPx84Y7n3EU/view?usp=drive_link",
+      content: "We recently decided to run ads on Meta and needed a professional video to represent our brand.When we were referred to Wevad Media — and it turned out to be the best decision. From concept to execution, the entire process was smooth and well-organized.The shoot was efficient, and the editing was top-notch. If you're looking to create high-quality videos that truly elevate your business or social media presence, Wevad Media is the team to trust. Highly recommended!",
       rating: 5,
       project: "Complete Digital Transformation"
     },
     {
-      name: "Michael Chen",
-      role: "Marketing Director",
+      name: "Soniya Tanwar",
+      role: "Director in Krishna Cancer Aid Association",
       company: "GrowthCorp Inc.",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content: "The team at Wevad Media doesn't just deliver projects, they deliver results. Their data-driven approach to our social media campaigns generated an ROI that surpassed our wildest expectations.",
+      image: "./Sonia.png",
+      content: "We recently had the pleasure of working with Hariom Pathak from Wevad Media for our event at the KCA Marathon. The final video we received was absolutely outstanding and had a very professional touch. We're definitely looking forward to working with him again. If you're looking to capture your special moments with a high-quality, cinematic feel, I highly recommend Wevad Media — they truly deliver the finest results.",
       rating: 5,
       project: "Social Media Campaign"
     },
     {
-      name: "Sarah Johnson",
-      role: "Founder",
-      company: "Bella Boutique",
+      name: "Dr Kiran Patil",
+      role: "Vice Chancellor and Dean of  PIU",
+      company: "Plast India University",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content: "Working with Wevad Media was a game-changer for our brand. They created a visual identity that perfectly captures our essence and helped us connect with our target audience like never before.",
+      content: "It was a pleasure working with WeVad Media. Our collaboration went far beyond just shooting a video — it was a truly creative and strategic experience. Hariom brought fresh ideas, guided us on the right time to release content on social media, The entire video production process was seamless, highly professional, and creatively enriching. We wholeheartedly recommend partnering with WeVad for anyone looking to create impactful and engaging visual content.",
       rating: 5,
       project: "Brand Identity & Website"
     }
@@ -50,18 +50,17 @@ const Testimonials = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <Quote className="h-16 w-16 text-blue-600 mx-auto mb-8" />
             <blockquote className="text-3xl lg:text-4xl font-light text-gray-900 mb-8 leading-relaxed">
-              "Wevad Media transformed our entire digital presence. Their strategic approach and creative execution 
-              exceeded all expectations. We saw a 300% increase in qualified leads within just 3 months."
+              "Wevad Media brought our brand to life with stunning video content. Their seamless process and creative vision helped us boost engagement and drive real results."
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <img
-                src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Jennifer Martinez"
+                src="./Aman.jpg"
+                alt="Aman Upadhyay"
                 className="w-16 h-16 rounded-full object-cover"
               />
               <div className="text-left">
-                <div className="font-semibold text-gray-900">Jennifer Martinez</div>
-                <div className="text-gray-600">CEO, TechFlow Solutions</div>
+                <div className="font-semibold text-gray-900">Aman Upadhyay</div>
+                <div className="text-gray-600">Fitness coach & Founder of FitXHome India</div>
               </div>
             </div>
           </div>

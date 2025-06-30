@@ -22,14 +22,18 @@ const Header = () => {
             {/* <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg group-hover:scale-110 transition-transform duration-200">
               <Zap className="h-6 w-6 text-white" />
             </div> */}
-            <img 
+            <img
               src="/logo.png" // Replace with your actual logo URL
               alt="Wevad Media Logo"
               className="h-14 w-14 object-contain group-hover:scale-110 transition-transform duration-200"
             />
-            <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            <span
+              className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent"
+              
+            >
               Wevad Media
             </span>
+
           </Link>
 
           {/* Desktop Navigation */}
@@ -38,10 +42,10 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-lg font-medium transition-all duration-200 hover:text-blue-600 relative group ${location.pathname === item.path
+                className={`text-md font-medium transition-all duration-200 hover:text-blue-600 relative group ${location.pathname === item.path
                   ? 'text-blue-600'
                   : 'text-gray-900'
-                }`}
+                  }`}
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200"></span>

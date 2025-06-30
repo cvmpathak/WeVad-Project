@@ -2,24 +2,19 @@ import React from 'react';
 
   const team = [
     {
-      name: "Santanu kumar",
-      role: "Digital Marketing Lead",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
+      name: "Aayush Rana",
+      role: "Editing Manager",
+      image: "./Ayush.jpg"
     },
     {
       name: "Hariom Pathak",
-      role: "Creative Director",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+      role: "Director & Post-Production Lead",
+      image: "./hariom.jpg"
     },
     {
       name: "Bimochan jena",
       role: "Head of Design",
-      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "Sourabh Singh",
-      role: "Technology Director",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "./Bimochan.png"
     }
   ];
 
@@ -37,16 +32,16 @@ const TeamSection = () => {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
                         {team.map((member, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                                className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
                             >
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="w-full h-64 object-cover"
+                                    className="w-full h-80 object-cover"
                                 />
                                 <div className="p-6 text-center">
                                     <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>

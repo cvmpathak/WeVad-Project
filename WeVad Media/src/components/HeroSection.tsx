@@ -57,7 +57,7 @@ const HeaderHero: React.FC = () => {
             </div>
 
             <div className="relative hidden md:block">
-              <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-orange-500/20 rounded-3xl backdrop-blur-sm border border-white/10 p-8">
+              <div className=" bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 rounded-3xl backdrop-blur-sm border border-white/10 p-8">
                 <div className="h-full bg-gradient-to-br from-white/10 to-white/5 rounded-2xl flex items-center justify-center">
                   <div className="text-center text-white p-8">
                     <Zap className="h-16 w-16 mx-auto mb-4 text-blue-400" />

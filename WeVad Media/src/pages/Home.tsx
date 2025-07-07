@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       <InfiniteCarousel />
       {/* <ClientCards /> */}
       <Testimonials />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <ContactSection />
     </div>
   );

@@ -25,7 +25,7 @@ const Testimonials = () => {
       name: "Dr Kiran Patil",
       role: "Vice Chancellor and Dean of  PIU",
       company: "Plast India University",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "./kiran.png",
       content: "It was a pleasure working with WeVad Media. Our collaboration went far beyond just shooting a video — it was a truly creative and strategic experience. Hariom brought fresh ideas, guided us on the right time to release content on social media, The entire video production process was seamless, highly professional, and creatively enriching. We wholeheartedly recommend partnering with WeVad for anyone looking to create impactful and engaging visual content.",
       rating: 5,
       project: "Brand Identity & Website"

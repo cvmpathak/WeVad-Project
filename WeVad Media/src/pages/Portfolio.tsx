@@ -31,7 +31,7 @@ const Portfolio = () => {
       type: 'instagram',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=1067',
       // Replace with your actual Google Drive share link
-      drive_video_url: 'https://drive.google.com/file/d/1feBfd15iqyteqHsZN43DP32oH_ADMs6Y/view?usp=drive_link',
+      drive_video_url: 'https://drive.google.com/file/d/1feBfd15iqyteqHsZN43DP32oH_ADMs6Y/view?usp=sharing',
       is_video: true,
       caption: 'Complete rebranding campaign for Plast India University, including institutional video production, strategic academic outreach on social media, and a future-forward brand identity reflecting innovation in polymer science and sustainability.',
       likes: 1247,
@@ -55,7 +55,7 @@ const Portfolio = () => {
       type: 'youtube',
       thumbnail: 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=600&h=1067',
       // Replace with your actual Google Drive share link
-      drive_video_url: 'https://drive.google.com/file/d/1TfjHF_QTQHAo8gNDP-_vjB4VzJfjSbFY/view?usp=drive_link',
+      drive_video_url: 'https://drive.google.com/file/d/1TfjHF_QTQHAo8gNDP-_vjB4VzJfjSbFY/view?usp=sharing',
       title: 'FitXHome India',
       description: 'Comprehensive rebranding campaign for FitXHome India, featuring high-impact fitness video content, digital-first social media strategy, and a revitalized brand identity designed to inspire wellness at every doorstep.',
       duration: '1:00',
@@ -77,7 +77,7 @@ const Portfolio = () => {
       type: 'drive',
       thumbnail: 'https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600&h=1067',
       // Replace with your actual Google Drive share link
-      drive_video_url: 'https://drive.google.com/file/d/1oLrkG1yNhaH63kPlIqTIl0cOPAMMY3Kj/view?usp=drive_link',
+      drive_video_url: 'https://drive.google.com/file/d/1oLrkG1yNhaH63kPlIqTIl0cOPAMMY3Kj/view?usp=sharing',
       title: 'Client Project: Krishna Cancer Aid Association',
       description: 'Complete rebranding campaign for Krishna Cancer Aid Association, encompassing patient-focused video storytelling, healthcare-centric social media strategy, and a compassionate, trust-driven brand identity redesign.',
       duration: '1:06',

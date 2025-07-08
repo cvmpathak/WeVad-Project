@@ -8,6 +8,7 @@ import About from './pages/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Portfolio from './pages/Portfolio';
+import Templates from './pages/Templates';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Portfolio />} />
+        <Route path="/templates" element={<Templates />} />
       </Routes>
       </main>
       <Footer />
